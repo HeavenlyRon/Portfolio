@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RAZ favicon">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2A0F1C" />
+      <stop offset="1" stop-color="#0E050B" />
+    </linearGradient>
+    <linearGradient id="ring" x1="12" y1="10" x2="53" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7E8EC" />
+      <stop offset="0.45" stop-color="#C57C8A" />
+      <stop offset="1" stop-color="#732C3F" />
+    </linearGradient>
+    <radialGradient id="core" cx="36%" cy="34%" r="70%">
+      <stop offset="0" stop-color="#FFD9E0" />
+      <stop offset="0.55" stop-color="#C57C8A" />
+      <stop offset="1" stop-color="#7B3145" />
+    </radialGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)" />
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="none" stroke="#C57C8A" stroke-opacity="0.25" />
+
+  <g filter="url(#glow)">
+    <circle
+      cx="32"
+      cy="32"
+      r="18"
+      fill="none"
+      stroke="url(#ring)"
+      stroke-width="7"
+      stroke-linecap="round"
+      stroke-dasharray="94 20"
+      transform="rotate(-28 32 32)"
+    />
+    <circle
+      cx="32"
+      cy="32"
+      r="24"
+      fill="none"
+      stroke="#C57C8A"
+      stroke-opacity="0.25"
+      stroke-width="1.5"
+      stroke-dasharray="3.2 4.6"
+      transform="rotate(18 32 32)"
+    />
+    <circle cx="32" cy="32" r="7.6" fill="url(#core)" />
+    <circle cx="45" cy="18" r="3" fill="#F7E8EC" fill-opacity="0.9" />
+  </g>
+</svg>
